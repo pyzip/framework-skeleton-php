@@ -1,0 +1,7 @@
+// Arquivos ignorados
+.DS_Store
+.idea/
+.env
+
+// Diretorios ignorados
+vendor/

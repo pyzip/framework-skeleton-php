@@ -1,0 +1,16 @@
+{
+    "name": "adimael/typper",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Adimael",
+            "email": "adimaelbr@gmail.com"
+        }
+    ],
+    "require": {}
+}
