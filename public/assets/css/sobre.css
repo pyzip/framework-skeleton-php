@@ -1,0 +1,45 @@
+.sobre-section {
+    max-width: 700px;
+    margin: 3rem auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 2.5rem 2rem;
+}
+.sobre-section h2 {
+    color: #2196f3;
+    margin-bottom: 1rem;
+}
+.sobre-section p {
+    color: #444;
+    line-height: 1.7;
+}
+
+.tech-list {
+    margin: 1.5rem 0 0 0;
+    padding-left: 1.2rem;
+    color: #333;
+    font-size: 1.05rem;
+    list-style: disc inside;
+}
+.tech-list li {
+    margin-bottom: 0.5rem;
+}
+
+.autor-section {
+    text-align: center;
+    margin-top: 2.5rem;
+    background: #f8fafc;
+    border: 1.5px dashed #e3e3e3;
+}
+.autor-link {
+    color: #2196f3;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+}
+.autor-link:hover {
+    color: #1769aa;
+    text-decoration: underline;
+}

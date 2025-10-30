@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    background: #f4f6fb;
+    color: #23272f;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #23272f;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    gap: 2rem;
+}
+nav ul li {
+    margin: 0;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: background 0.18s, color 0.18s;
+}
+nav ul li a:hover, nav ul li a.active {
+    background: #00bcd4;
+    color: #fff;
+}
+
+.hero {
+    text-align: center;
+    padding: 5rem 1rem 4rem 1rem;
+    background: linear-gradient(120deg, #00bcd4 0%, #2196f3 100%);
+    color: #fff;
+    border-radius: 0 0 32px 32px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+    margin-bottom: 2.5rem;
+    animation: fadeInDown 0.8s cubic-bezier(.4,0,.2,1);
+}
+.hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1.2rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2.2rem;
+    color: #e3f6fd;
+}
+.btn {
+    display: inline-block;
+    padding: 0.85rem 2.2rem;
+    background: #fff;
+    color: #2196f3;
+    border-radius: 28px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover {
+    background: #2196f3;
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(33,150,243,0.12);
+}
+
+main {
+    flex: 1 0 auto;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 1rem 1rem 1rem;
+    color: #7a7a7a;
+    font-size: 1rem;
+    background: #f8fafc;
+    border-top: 1px solid #e3e3e3;
+    margin-top: auto;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
