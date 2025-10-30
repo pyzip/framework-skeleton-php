@@ -1,0 +1,170 @@
+/* Centraliza o conteúdo da main da página de erro */
+.error-main-centered {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-hero {
+  width: 100%;
+  max-width: 520px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.error-icon {
+  font-size: 3.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.error-actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.2rem;
+}
+
+.btn-ghost {
+  background: #fff;
+  color: #ff5252;
+  border: 1.5px solid #ff5252;
+  box-shadow: none;
+}
+.btn-ghost:hover {
+  background: #ff5252;
+  color: #fff;
+}
+/* public/assets/css/errors.css */
+:root{
+  --bg: #f6f8fb;
+  --card: #ffffff;
+  --muted: #6b7280;
+  --accent: #2563eb;
+  --shadow: 0 8px 30px rgba(8, 15, 52, 0.08);
+body {
+  margin: 0;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  background: #f4f6fb;
+  color: #23272f;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.error-404 {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  flex: 1 0 auto;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  margin-top: 4rem;
+  margin-bottom: 2.5rem;
+  animation: fadeInDown 0.8s cubic-bezier(.4,0,.2,1);
+}
+
+.code {
+  font-weight: 900;
+  font-size: 5.5rem;
+  line-height: 1;
+  color: #00bcd4;
+  min-width: 140px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 12px rgba(0,188,212,0.08);
+}
+
+.info h1 {
+  margin: 0 0 12px 0;
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: #23272f;
+}
+
+.info p {
+  margin: 0 0 18px 0;
+  color: #7a7a7a;
+  max-width: 520px;
+  font-size: 1.1rem;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1.2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.85rem 2.2rem;
+  background: #00bcd4;
+  color: #fff;
+  border-radius: 28px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 8px rgba(0,188,212,0.10);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  border: none;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #2196f3;
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(33,150,243,0.12);
+}
+
+.link {
+  color: #2196f3;
+  text-decoration: underline;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.link:hover {
+  color: #00bcd4;
+}
+
+.small {
+  margin-top: 14px;
+  text-align: center;
+  color: #7a7a7a;
+  font-size: 1rem;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 700px) {
+  .card {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+  .code {
+    font-size: 3.5rem;
+    min-width: auto;
+  }
+}
